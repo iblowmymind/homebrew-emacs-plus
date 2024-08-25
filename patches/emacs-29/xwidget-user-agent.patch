@@ -1,0 +1,17 @@
+diff --git a/src/nsxwidget.m b/src/nsxwidget.m
+index 2d83e88..228a9f3 100644
+--- a/src/nsxwidget.m
++++ b/src/nsxwidget.m
+@@ -87,9 +87,9 @@ - (id) initWithFrame:(CGRect)frame
+       self.navigationDelegate = self;
+       self.UIDelegate = self;
+       self.customUserAgent =
+-        @"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6)"
+-        @" AppleWebKit/603.3.8 (KHTML, like Gecko)"
+-        @" Version/11.0.1 Safari/603.3.8";
++        @"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
++        @" AppleWebKit/605.1.15 (KHTML, like Gecko)"
++        @" Version/17.6 Safari/605.1.15";
+       [scriptor addScriptMessageHandler:self name:@"keyDown"];
+       WKUserScript *userScript = [[[WKUserScript alloc]
+                                     initWithSource:xwScript
